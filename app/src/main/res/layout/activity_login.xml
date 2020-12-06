@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:src="@drawable/login"
+    android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHeader1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="WELCOME TO"
+        android:gravity="center"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHeader2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader1"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="FURNITURE"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/edUserName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/ic_account_f20615"
+            android:drawablePadding="5dp"
+            android:hint="User Name"
+            android:paddingStart="10dp"
+            android:textColorHint="#F20615"
+            android:textSize="18sp" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:hint="Password"
+            android:id="@+id/edPass"
+            android:textSize="18sp"
+            android:inputType="textPassword"
+            android:textColorHint="#F20615"
+            android:paddingStart="10dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_pass_24"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/btLogin"
+            android:layout_marginTop="10dp"
+            android:background="#F20615"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#036CC8"
+                android:drawableLeft="@drawable/facebook"
+                android:text="FACEBOOK"
+                android:textSize="20sp"
+                android:paddingStart="10dp"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GOOGLE"
+                android:paddingStart="10dp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:background="#f20615"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+
+                android:drawableLeft="@drawable/ic_google"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="register now"
+        android:id="@+id/btnRegister"
+        android:background="#f20615"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="30dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
